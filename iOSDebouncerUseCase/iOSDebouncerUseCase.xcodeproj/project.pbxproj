@@ -14,6 +14,8 @@
 		3FD45EB72E41AFF100CA2BB3 /* iOSDebouncerUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD45EB62E41AFF100CA2BB3 /* iOSDebouncerUseCaseTests.swift */; };
 		3FD45EC12E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD45EC02E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITests.swift */; };
 		3FD45EC32E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD45EC22E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITestsLaunchTests.swift */; };
+		3FD45ED02E41B08F00CA2BB3 /* DebounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD45ECF2E41B08F00CA2BB3 /* DebounceView.swift */; };
+		3FD45ED22E41B09A00CA2BB3 /* NoDebounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD45ED12E41B09A00CA2BB3 /* NoDebounceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		3FD45EBC2E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDebouncerUseCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD45EC02E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDebouncerUseCaseUITests.swift; sourceTree = "<group>"; };
 		3FD45EC22E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDebouncerUseCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FD45ECF2E41B08F00CA2BB3 /* DebounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceView.swift; sourceTree = "<group>"; };
+		3FD45ED12E41B09A00CA2BB3 /* NoDebounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDebounceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		3FD45EA42E41AFEF00CA2BB3 /* iOSDebouncerUseCase */ = {
 			isa = PBXGroup;
 			children = (
+				3FD45ED42E41B0D600CA2BB3 /* NoDebounceView */,
+				3FD45ED32E41B0CB00CA2BB3 /* WithDebounce */,
 				3FD45EA52E41AFEF00CA2BB3 /* iOSDebouncerUseCaseApp.swift */,
 				3FD45EA72E41AFEF00CA2BB3 /* ContentView.swift */,
 				3FD45EA92E41AFF100CA2BB3 /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				3FD45EC22E41AFF100CA2BB3 /* iOSDebouncerUseCaseUITestsLaunchTests.swift */,
 			);
 			path = iOSDebouncerUseCaseUITests;
+			sourceTree = "<group>";
+		};
+		3FD45ED32E41B0CB00CA2BB3 /* WithDebounce */ = {
+			isa = PBXGroup;
+			children = (
+				3FD45ECF2E41B08F00CA2BB3 /* DebounceView.swift */,
+			);
+			path = WithDebounce;
+			sourceTree = "<group>";
+		};
+		3FD45ED42E41B0D600CA2BB3 /* NoDebounceView */ = {
+			isa = PBXGroup;
+			children = (
+				3FD45ED12E41B09A00CA2BB3 /* NoDebounceView.swift */,
+			);
+			path = NoDebounceView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD45ED22E41B09A00CA2BB3 /* NoDebounceView.swift in Sources */,
 				3FD45EA82E41AFEF00CA2BB3 /* ContentView.swift in Sources */,
+				3FD45ED02E41B08F00CA2BB3 /* DebounceView.swift in Sources */,
 				3FD45EA62E41AFEF00CA2BB3 /* iOSDebouncerUseCaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
